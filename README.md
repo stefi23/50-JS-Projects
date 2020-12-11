@@ -5,3 +5,4 @@ Sharpen my HTML, CSS & JavaScript skills by building 50 quick, unique & fun mini
 | #   | Project         | Live Demo                                  |
 | --- | --------------- | ------------------------------------------ |
 | 1   | Expanding Cards | [Live Demo]("./Expanding-Cards/index.html) |
+| 2   | Progress Steps  | [Live Demo]("./progress-steps/index.html)  |

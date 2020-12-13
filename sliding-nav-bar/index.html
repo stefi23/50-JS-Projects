@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Slidebar Menu</title>
+</head>
+
+<body>   
+    <!-- Navigation -->
+    <nav id="side-menu" class="side-menu" onmouseleave="closeMenu()">
+        <ul>
+            <li>    <a  class="active element" 
+                        id="element"
+                        href="index.html"
+                        onmouseover="highlight(0)">
+                        <i class=" item fas fa-home"></i> Home
+                    </a> 
+            </li>
+            <li>
+                    <a  class="element" 
+                        id="element"
+                        href="about.html" 
+                        onmouseover="highlight(1)"> 
+                        <i class="item fas fa-user-alt"></i> About
+                    </a>
+            </li>
+            <li>    <a  class="element"
+                        id="element" 
+                        href="contact.html" 
+                        onmouseover="highlight(2)">
+                        <i class="item fas fa-envelope"></i> Contact
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Menu button -->
+    <div class="menu-trigger">
+        <button onclick = "openMenu()"
+                onmouseover="openMenu()" id="open" 
+                class="expand-arrow"
+                >
+            <i  class="expand-arrow fas fa-angle-double-right"
+                id="expand-arrow"></i>
+        </button>
+    </div>
+
+    <!-- Content panel -->
+    <div id="main" class="main" onclick="closeMenu()">
+    <h1>My favorite coffee shops in Barcelona</h1>
+    <img src="coffee.jpg" alt="mug with coffee" />
+    <p>I'm a big coffee lover. During my 3 years living in Barcelona I've visited many of the speciality coffee places and made a list with my personal favorites. Enjoy!</p> 
+    <ul>
+        <li>Hidden Cafe</li>
+        <li>People's Coffee</li>
+        <li>Roast Club Cafe</li>
+        <li>Little Fern</li>
+        <li>Robot House Cafe</li>
+    </ul>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
+

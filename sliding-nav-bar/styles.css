@@ -31,7 +31,7 @@ h3 {
   color: white;
   margin-left: -250px;
   transition: 0.75s;
-  z-index: 1;
+  z-index: 0;
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,9 +107,9 @@ button {
 .no-bullets a {
   color: #581845;
   font-size: 20px;
-  text-decoration:none
+  text-decoration: none;
 }
 
 .no-bullets a:hover {
-  color: #8f3774
+  color: #8f3774;
 }

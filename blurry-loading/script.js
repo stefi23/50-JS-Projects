@@ -5,6 +5,7 @@ let load = 0;
 
 let int = setInterval (blurring, 40)
 
+
 function blurring() {
     load++
     if(load > 99){

@@ -68,7 +68,7 @@ h1 {
 
 .split {
   position: absolute;
-  width: 70%;
+  width: 50%;
   height: 100%;
   overflow: hidden;
 }
@@ -111,19 +111,19 @@ h1 {
 }
 
 .hover-left .left {
-  width: var(--hover-width);
+  width: var(--hover-width); /*  60% */
 }
 
 .hover-left .right {
-  width: var(--other-width);
+  width: var(--other-width); /*  40% */
 }
 
 .hover-right .right {
-  width: var(--hover-width);
+  width: 65%;
 }
 
 .hover-right .left {
-  width: var(--other-width);
+  width: 35%;
 }
 
 @media (max-width: 800px) {

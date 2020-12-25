@@ -25,7 +25,7 @@ body {
 
 .container h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .container a {
@@ -37,13 +37,13 @@ body {
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  background-color: lightblue;
+  background-color: #91cbed;
   padding: 15px;
   font-family: inherit;
   font-size: 15px;
   border: 0;
   border-radius: 5px;
-  color: midnightblue;
+  color: rgba(0, 0, 0, 0.7);
   font-weight: bold;
 }
 
@@ -64,7 +64,8 @@ body {
 
 .form-control {
   position: relative;
-  margin: 20px 0 40px;
+  /* margin: 20px 0px 45px; */
+  margin: 45px 0px 25px 0px;
   width: 300px;
 }
 
@@ -83,5 +84,26 @@ body {
 .form-control input:valid {
   outline: 0;
   box-shadow: 0 0 0 3px #91cbed;
+  border-bottom: #91cbed;
   border-radius: 1px;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.86, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: #91cbed;
+  transform: translateY(-48px);
 }

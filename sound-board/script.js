@@ -22,3 +22,6 @@ function stopSound() {
         song.currentTime = 0;
     })
 }
+
+
+
